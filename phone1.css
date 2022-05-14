@@ -112,7 +112,7 @@
 #climate::before {
     content: "";
     position: absolute;
-    height: 514.1%;
+    height: 501.1%;
     width: 294%;
     z-index: -2;
     background: #fff;
