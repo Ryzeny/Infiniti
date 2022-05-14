@@ -1,0 +1,153 @@
+#infinite_text {
+    font-size: 5.9rem;
+    padding: 2px 4px;
+    text-align: left;
+    font-family: 'Boogaloo', cursive;
+    color: white;
+    position: absolute;
+    left: -42px;
+    top: 120px;
+}
+
+.banner .text .welcome_font {
+    font-size: 10rem;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding: 28px 40px;
+    font-family: 'Pangolin', cursive;
+    position: static;
+    float: left;
+    margin-left: 209px;
+}
+
+.banner video {
+    position: absolute;
+    top: 249px;
+    left: 0;
+    object-fit: cover;
+    width: 304%;
+    height: 133%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(70%);
+}
+
+#navbar ul li a {
+    color: white;
+    font-size: 2.3rem;
+    padding: 3px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    float: left;
+    text-transform: uppercase;
+    margin-left: 95px;
+    margin-top: 46px;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    background-color: #151819;
+    height: 109%;
+    width: 307%;
+    z-index: -3;
+    margin-top: -14%;
+    margin-left: 175%;
+}
+
+#about h1 {
+    text-align: center;
+    margin-top: 19px;
+    margin-left: 545px;
+    font-size: 7.2rem;
+}
+#about p {
+    font-size: 3.9rem;
+    margin-left: 544px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 801px;
+    text-align: center;
+}
+#climate::before {
+    content: "";
+    position: absolute;
+    height: 632.9%;
+    width: 303%;
+    z-index: -2;
+    background: #fff;
+    font-family: 'Loto', sans-serif;
+}
+
+.climatetext {
+    font-size: 7.4rem;
+    font-family: 'Anton', sans-serif;
+    margin-left: 8%;
+    width: 296%;
+}
+
+.climatetext2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 14%;
+    font-size: 2.6rem;
+    width: 258%;
+}
+
+#img_effect {
+    margin-top: -7%;
+    margin-left: 12%;
+    width: 185%;
+}
+
+#Faq::before {
+    content: "";
+    position: absolute;
+    height: 147%;
+    width: 304%;
+    z-index: -3;
+    background: #151819;
+    font-family: 'Loto', sans-serif;
+}
+
+.faqtext {
+    text-align: center;
+    font-family: 'Limelight', cursive;
+    font-size: 7rem;
+    color: white;
+    width: 212%;
+    margin-left: 44%;
+}
+
+.accordion .contentBx.active .content {
+    height: 437px;
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-size: 2.9rem;
+    margin-top: 16px;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    width: 98%;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}

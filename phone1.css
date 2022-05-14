@@ -1,0 +1,193 @@
+#navbar ul li a {
+    color: white;
+    font-size: 2.3rem;
+    padding: 3px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    float: left;
+    text-transform: uppercase;
+    margin-left: 138px;
+    margin-top: 66px;
+}
+
+.banner video {
+    position: absolute;
+    top: 330px;
+    left: 0;
+    object-fit: cover;
+    width: 292%;
+    height: 131%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(70%);
+    margin-left: 0%;
+}
+
+.banner .text .welcome_font {
+    font-size: 10rem;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding: 28px 40px;
+    font-family: 'Pangolin', cursive;
+    position: static;
+    float: left;
+    margin-left: 562px;
+}
+
+#infinite_text {
+    font-size: 6rem;
+    padding: 2px 4px;
+    text-align: left;
+    font-family: 'Boogaloo', cursive;
+    color: white;
+    position: absolute;
+    left: 521px;
+    top: 19px;
+}
+
+#logo svg:nth-of-type(3) {
+    stroke-width: 11;
+    position: relative;
+}
+#logo svg {
+    height: 100px;
+    padding: 4px 1px;
+    fill: none;
+    stroke-width: 10;
+    transform: scale(2);
+    stroke: url(#color);
+    stroke-dasharray: 60 172;
+    stroke-linecap: round;
+    animation: infinit 4s linear infinite;
+    top: 22px;
+    left: 245px;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    background-color: #151819;
+    height: 109%;
+    width: 307%;
+    z-index: -3;
+    margin-top: -14%;
+    margin-left: 175%;
+}
+
+#about h1 {
+    text-align: center;
+    margin-top: 19px;
+    margin-left: 684px;
+    font-size: 7.2rem;
+}
+#about p {
+    font-size: 3.9rem;
+    /* padding: 2px 159px; */
+    margin-left: 679px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 907px;
+    text-align: center;
+}
+
+.banner .text .welcome_font {
+    font-size: 10rem;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding: 28px 40px;
+    font-family: 'Pangolin', cursive;
+    position: static;
+    float: left;
+    margin-left: 732px;
+    margin-top: 0%;
+}
+
+#climate::before {
+    content: "";
+    position: absolute;
+    height: 514.1%;
+    width: 294%;
+    z-index: -2;
+    background: #fff;
+    font-family: 'Loto', sans-serif;
+}
+
+.climatetext {
+    font-size: 5.7rem;
+    font-family: 'Anton', sans-serif;
+    margin-left: 5%;
+    width: 276%;
+}
+
+.climatetext2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1%;
+    font-size: 2.5rem;
+    /* margin-right: -189px; */
+    padding-left: 16px;
+    width: 280%;
+}
+
+#img_effect {
+    margin-top: -7%;
+    margin-left: 6%;
+    width: 177%;
+}
+
+.faqtext {
+    text-align: center;
+    font-family: 'Limelight', cursive;
+    font-size: 6rem;
+    color: white;
+    margin-left: 52%;
+    width: 728px;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#Faq::before {
+    content: "";
+    position: absolute;
+    height: 148%;
+    width: 294%;
+    z-index: -3;
+    background: #151819;
+    font-family: 'Loto', sans-serif;
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-size: 2.7rem;
+    margin-top: 13px;
+    padding-left: 9px;
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    text-align: center;
+    width: 112%;
+    margin-left: -7.3%;
+}
+.accordion .contentBx.active .content {
+    height: 304px;
+}
+
+.accordion{
+    margin-left: 38%;
+}

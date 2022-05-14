@@ -1,0 +1,81 @@
+.banner video {
+    position: absolute;
+    margin-top: 67px;
+    left: -1px;
+    object-fit: cover;
+    width: 285%;
+    height: 143%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(70%);
+}
+
+.banner {
+    width: 241%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#infinite_text {
+    font-size: 5.9rem;
+    padding: 2px 1px;
+    text-align: left;
+    font-family: 'Boogaloo', cursive;
+    color: white;
+    position: absolute;
+    margin-top: -104px;
+    margin-left: 490px;
+}
+#logo svg:nth-of-type(3) {
+    stroke-width: 11;
+    position: relative;
+}
+#logo svg {
+    height: 100px;
+    padding: -1px 1px;
+    fill: none;
+    stroke-width: 10;
+    transform: scale(2);
+    stroke: url(#color);
+    stroke-dasharray: 60 172;
+    stroke-linecap: round;
+    animation: infinit 4s linear infinite;
+    top: 23px;
+    left: 204px;
+}
+
+#navbar ul li a {
+    margin-right: 44px;
+    color: white;
+    font-size: 2.3rem;
+    padding: 19px 19px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    float: left;
+    text-transform: uppercase;
+    margin-left: 97px;
+    margin-top: 67px;
+}
+
+#navbar:hover{
+    background: none;
+    background-color:rgba(14,17,40,255) ;
+
+}
+
+.banner .text .welcome_font {
+    font-size: 10rem;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding: 28px 40px;
+    font-family: 'Pangolin', cursive;
+    position: static;
+    float: left;
+    margin-left: 200px;
+    margin-top: 4px;
+}

@@ -1,0 +1,413 @@
+/* CSS RESET*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;    
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: rgba(14,17,40,255);
+}
+
+::-webkit-scrollbar{
+    width: 0%;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: progressbaranime 5s linear infinite;
+}
+@keyframes progressbaranime{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 40px;
+
+}
+
+
+/* Animation */
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#navbar:hover{
+    transition: ease-in 0.4s;
+    box-shadow: inset 0 10000px 0 0 #202337;
+    
+}
+
+/* Navigation Bar : Logo and Image */
+#logo svg{
+    height: 90px;
+    padding: 4px 1px;
+    fill: none;
+    stroke-width: 10;
+    transform: scale(2);
+    stroke: url(#color);
+    stroke-dasharray: 60 172;
+    stroke-linecap: round;
+    animation:infinit 4s linear infinite;
+    top: 0;
+    left: 0;
+}
+@keyframes infinit{
+    0%{
+        stroke-dashoffset: 0%;
+    }
+    100%{
+        stroke-dashoffset: 232;
+    }
+}
+
+#logo svg:nth-of-type(1){
+    animation: none;
+    stroke: white;
+    stroke-dasharray: none;
+    position: absolute;
+}
+#logo svg:nth-of-type(2){
+    stroke-width: 11;
+    filter: blur(12px);
+    position: absolute;
+}
+#logo svg:nth-of-type(3){
+    stroke-width: 11;
+    position:sticky;
+}
+
+#infinite_text{
+    font-size: 4.9rem;
+    padding: 2px 273px;
+    text-align: left;
+    font-family: 'Boogaloo', cursive;
+    color: white;
+    position: absolute;
+
+}
+
+
+
+
+/* Navigation Bar : List Styling*/
+#navbar {
+    position: relative;
+    z-index: 1;
+    margin-top: -1.2%;
+}
+
+
+#navbar ul{
+    display: flex;
+    
+    
+
+}
+
+#navbar::before{
+    content: "";
+    
+   
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.5rem;
+    
+
+
+}
+
+#navbar ul li a {
+    margin-right: 50px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 3px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    float: left;
+    text-transform: uppercase;
+}
+    
+    
+
+
+#navbar ul li a:hover{
+    color:white;
+    background-color:mediumslateblue;
+    
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Limelight', cursive;
+}
+
+
+#about::before {
+    content: "";
+    position: absolute;
+    background-color: #151819;
+    height: 39%;
+    width: 100%;
+    z-index: -3;
+    margin-top: -14%;
+
+}
+#about h1{
+    text-align: center;
+    margin-top: -19%;
+    
+}
+
+#about p{
+    font-size:2.7rem;
+}
+
+#infinity_pic {
+    width: 33%;
+    margin-left: 1308px;
+    margin-top: -166px;
+    position: relative;
+}
+
+
+
+/* Climate Section*/
+#climate::before{
+    content: "";  
+    position: absolute;
+    height: 211.4%;
+    width: 100%;
+    z-index: -2;
+    background: #fff;
+    font-family: 'Loto', sans-serif;
+}
+#climate{
+    height: 211.4%;
+    width: 100%;
+}
+
+.climatetext{
+    font-size: 3.7rem;
+    font-family: 'Anton', sans-serif;
+    margin-left: 1%;
+}
+.climatetext2{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1%;
+    font-size:1.5rem;
+    margin-right: 1%;
+}
+
+#img_effect {
+    margin-top: -32%;
+    margin-left: 59%;
+    width: 37%;
+
+}
+
+/* FAQ Section */
+
+#Faq::before{
+    content: "";  
+    position: absolute;
+    height: 97%;
+    width: 100%;
+    z-index: -3;
+   
+    background: #151819;
+    font-family: 'Loto', sans-serif;
+}
+
+.accordion{
+    width: 800px;
+    margin-left: 24%;
+    
+}
+
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top:50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+
+.accordion .contentBx .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-size: 1.5rem;
+    margin-top: 12px;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.accordion .contentBx.active .content{
+    height: 150px;
+}
+.faqtext{
+     text-align: center;
+     font-family: 'Limelight', cursive;
+     font-size: 4rem;
+     color:white;
+ }
+
+/* Utility Classes */
+.h-primary{
+    font-size: 4.7rem;
+    font-family: 'Limelight',cursive;
+    padding: 12px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.p-primary{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Boogaloo';
+    color: #fff;
+}
+
+/**/
+
+
+/* Video */
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(70%)
+}
+
+.banner .text{
+    z-index: 1;
+    padding: 23px 23px;
+  
+}
+
+.banner .text .welcome_font{
+    font-size: 8rem;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding: 32px 58px;
+    font-family: 'Pangolin', cursive;
+    position:static;
+    float: left;    
+    margin-top: -15%;
+}
+
