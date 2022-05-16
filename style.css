@@ -14,11 +14,11 @@ html{
 }
 
 body{
-    background-color: #151819;
+    background-color: #3586ff;
 }
 
 ::-webkit-scrollbar{
-    width: 0%;
+    width: ;
 }
 
 #scrollPath{
@@ -214,17 +214,16 @@ body{
     font-family: 'Limelight', cursive;
 }
 
-
 #about::before {
     content: "";
     position: absolute;
-    background-color: #151819;
-    height: 39%;
+    background-color: rgb(21, 24, 25);
+    height: 46.9%;
     width: 100%;
-    z-index: -3;
-    margin-top: -14%;
-
+    z-index: -1;
+    margin-top: -17%;
 }
+
 #about h1{
     text-align: center;
     margin-top: -19%;
@@ -248,7 +247,7 @@ body{
 #climate::before {
     content: "";
     position: absolute;
-    height: 431.3%;
+    height:805%;
     width: 100%;
     z-index: -2;
     background: rgb(255, 255, 255);
@@ -265,28 +264,87 @@ body{
     margin-left: 1%;
     text-transform: uppercase;
     letter-spacing: 8px;
+    margin-bottom: 2px;
 }
 .climatetext2 {
     font-family: 'Montserrat', sans-serif;
     margin-left: 1%;
+    padding-top: 2px;
     font-size: 1.5rem;
     margin-right: 1%;
     width: 65%;
     text-align: justify;
+    line-height: 160%;
 }
 
 #img_effect {
-    margin-top: 11%;
-    margin-left: 57%;
-    width: 37%;
+    margin-top: 11.1%;
+    margin-left: 66%;
+    width: 31%;
     position: absolute;
+}
+#img_effect2 {
+    width: 29%;
+    height: 36%;
+    margin-left: 68%;
+    position: absolute;
+    margin-top: -12%;
+    /* transform: rotate(-23deg); */
+}
+
+#img_effect4 {
+    width: 34%;
+    position: absolute;
+    margin-left: 110%;
+    margin-top: -3%;
+}
+
+#img_effect5{
+    width: 100%;
+}
+#img_effect5 {
+    width: 35%;
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 56%;
 }
 
 .blue{
     color: rgba(23, 14, 149, 0.945);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-family:'Comic Neue', cursive;
+}
+.blue2{
+    color: rgba(23, 14, 149, 0.945);
     font-size: 2rem;
     text-transform: uppercase;
     font-family:'Comic Neue', cursive;
+}
+
+.climatetext span{
+    font-size: 5rem;
+    color: rgb(34, 168, 34);
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.climatetext2 span{
+    font-size: 3.5rem;
+    color: rgb(34, 168, 34);
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/* Not To Late Section */
+#not_late::before {
+    content: "";
+    position: absolute;
+    height: 53%;
+    width: 100%;
+    z-index: -3;
+    background: brown;
+    font-family: 'Loto', sans-serif;
 }
 
 /* FAQ Section */
@@ -297,8 +355,7 @@ body{
     height: 75%;
     width: 100%;
     z-index: -3;
-   
-    background: #151819;
+    background: #3586ff;
     font-family: 'Loto', sans-serif;
 }
 
@@ -355,6 +412,12 @@ body{
      font-family: 'Limelight', cursive;
      font-size: 4rem;
      color:white;
+     margin-left: 31px;
+ }
+
+ .faqtext:hover{
+     transform: 0.1s ease;
+     letter-spacing: 10px;
  }
 
 /* Utility Classes */
@@ -369,6 +432,7 @@ body{
     justify-content: center;
     color: #fff;
 }
+
 
 .p-primary{
     z-index: 1;
@@ -430,8 +494,99 @@ body{
     opacity: 0;
     transition: all 1s ease;
 }
+.reveal2{
+    position: absolute;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
 
 .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+}
+.reveal2.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    /* min-height: 100px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+    height: 541px;
+    margin-top: -30%;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom:10px ;
+    font-size: 1.1em;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url('wave.png');
+    background-size: 1000px 100px;
+    z-index: 1;
+
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation:  animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation:  animateWave 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation:  animateWave_02 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 29px;
+    animation:  animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+
+    100%{
+        background-position-x: 1000px;
+    }
 }
